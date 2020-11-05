@@ -1,6 +1,6 @@
 class ScrabbleLetters:
 
-    def __init__(self, word):
+    def __init__(self, word): # contains words and stores them under variables based on score
         self.value_1 = ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't']
         self.value_2 = ['d', 'g']
         self.value_3 = ['b', 'c', 'm', 'p']
@@ -10,7 +10,7 @@ class ScrabbleLetters:
         self.value_10 = ['q', 'z']
         self.word = word
 
-    def wordscore(self):
+    def wordscore(self): # adds score to score for each letter in word
         score = 0
         letters = self.word
         for i in letters:
